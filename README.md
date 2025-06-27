@@ -1,6 +1,7 @@
 # Saathvik Kalepu - Portfolio Website
 
-![Portfolio Screenshot](./images/screenshot.png) <!-- Add a screenshot if available -->
+![Portfolio Screenshot]![image](https://github.com/user-attachments/assets/04918eb8-a429-44ab-80bd-07dcc75ab653)
+
 
 A modern, interactive portfolio website showcasing my skills, projects, and professional journey as a Full Stack Developer & AI Specialist.
 
