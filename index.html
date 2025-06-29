@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saathvik Kalepu | Full Stack Developer & AI Specialist</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&family=Dancing+Script:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="./css/style.css">  
+</head>
+<style>
+  .form-floating {
+    position: relative;
+  }
+  .form-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #6c757d;
+    z-index: 4;
+    pointer-events: none;
+  }
+  .form-control {
+    padding-left: 45px !important;
+  }
+  textarea.form-control {
+    padding-top: 1.5rem !important;
+  }
+</style>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+  
+  <!-- Custom Cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+  
+  <!-- Floating Elements -->
+  <div id="floatingElements"></div>
+  
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <span class="cursive-font">Portfolio</span>
+        <span class="name-highlight">Saathvik</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Journey</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Creations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Connect</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h6 class="animate__animated animate__fadeInUp">Hello, I'm</h6>
+        <h1 class="animate__animated animate__fadeInUp animate__delay-1s">
+          <span class="name-highlight">Saathvik Kalepu</span>
+        </h1>
+        <div class="typewriter animate__animated animate__fadeInUp animate__delay-2s">
+          <h2 class="typing-text"></h2>
+        </div>
+        <p class="animate__animated animate__fadeInUp animate__delay-3s">Crafting digital experiences that blend innovation with purpose</p>
+        <div class="hero-btns animate__animated animate__fadeInUp animate__delay-4s">
+          <a href="#projects" class="btn btn-primary magnetic">
+            <span>View My Work</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#contact" class="btn btn-outline-light magnetic">
+            <span>Let's Collaborate</span>
+            <i class="fas fa-paper-plane"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-down animate__animated animate__bounce animate__infinite">
+      <a href="#about" class="magnetic"><i class="fas fa-chevron-down"></i></a>
+    </div>
+    <div class="tech-icons">
+      <i class="fab fa-react spin"></i>
+      <i class="fab fa-node-js float"></i>
+      <i class="fab fa-python swing"></i>
+      <i class="fas fa-robot bounce"></i>
+      <i class="fas fa-database pulse"></i>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="section-subtitle">Get to know the person behind the code</div>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="about-img">
+            <img src="./images/me.jpg" alt="Saathvik Kalepu" class="img-fluid">
+            <div class="glow-effect"></div>
+            <div class="info-bubble coding">
+              <span>10K+</span>
+              <small>Lines of Code</small>
+            </div>
+            <div class="info-bubble projects">
+              <span>20+</span>
+              <small>Projects</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="about-content">
+            <h3>Bridging Imagination <span class="highlight">with</span> Implementation</h3>
+            <p>I'm a Full Stack Developer and AI Specialist with a passion for creating immersive digital experiences. With expertise spanning from frontend aesthetics to backend architecture and AI integration, I transform complex problems into elegant solutions.</p>
+            <p>My approach combines technical precision with creative thinking, ensuring that every project not only functions flawlessly but also delivers an engaging user experience. I thrive at the intersection of technology and design.</p>
+            
+            <div class="skills-progress">
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Frontend Development</span>
+                  <span>95%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 95%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Backend Development</span>
+                  <span>90%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 90%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>Python/Java/C++</span>
+                  <span>85%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 85%"></div>
+                </div>
+              </div>
+              
+              <div class="skill-item">
+                <div class="skill-info">
+                  <span>UI/UX Design</span>
+                  <span>88%</span>
+                </div>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="about-cta">
+              <a href="./images/Resume.pdf" class="btn btn-download magnetic">
+                <i class="fas fa-download"></i> Download CV
+              </a>
+              <a href="#contact" class="btn btn-outline-primary magnetic">
+                <i class="fas fa-comment-dots"></i> Let's Talk
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="experience-section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My <span>Journey</span></h2>
+        <div class="section-subtitle">Professional milestones and learning experiences</div>
+      </div>
+      
+      <div class="timeline">
+        <!-- Experience 1 -->
+        <div class="timeline-item">
+          <div class="timeline-date">Present</div>
+          <div class="timeline-content">
+            <h3>Freelance Full Stack Developer</h3>
+            <span class="company">Self-Employed | Remote</span>
+            <p>Developed custom web applications and AI solutions for diverse clients. Specialized in creating responsive, scalable applications with modern tech stacks including Python</p>
+            <ul class="achievements">
+              <li><i class="fas fa-check-circle"></i> Delivered 15+ projects with 100% client satisfaction</li>
+              <li><i class="fas fa-check-circle"></i> Integrated AI features in 8 projects</li>
+              <li><i class="fas fa-check-circle"></i> Reduced client operational costs by 30% on average</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- Education -->
+        <div class="timeline-item">
+          <div class="timeline-date">2023 - 2027</div>
+          <div class="timeline-content">
+            <h3>B.Tech in Computer Science And Engineering</h3>
+            <span class="company">Indian Institute Of Information Technology Design And Manufacturing | Kurnool</span>
+            <p>Specialized in Artificial Intelligence and Web Technologies. Active participant in hackathons and coding competitions.</p>
+            <ul class="achievements">
+              <li><i class="fas fa-check-circle"></i> GPA: 8.2/10</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">My <span>Creations</span></h2>
+        <div class="section-subtitle">Innovative solutions to real-world challenges</div>
+      </div>
+
+      <div class="projects-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="ai">AI/ML</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 - E-commerce Dashboard -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&auto=format&fit=crop&w=1415&q=80" alt="E-commerce Dashboard">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="http://eccomerce-analytics-ztf9.vercel.app" class="link-icon" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com/sunny18-max/ecommerce-analytics" class="link-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Chart.js</span>
+                <span>MongoDB</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">E-commerce Analytics Dashboard</h3>
+              <div class="project-badge">Featured</div>
+            </div>
+            <p class="project-description">Comprehensive analytics platform providing real-time insights into sales performance, customer behavior, and inventory management for e-commerce businesses.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-chart-line"></i>
+                <span>30% increase in conversions</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>3 months development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 - Supply Chain Optimizer -->
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Supply Chain Optimizer">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="link-icon" title="Notebook">
+                  <i class="fas fa-book"></i>
+                </a>
+                <a href="https://github.com/sunny18-max/supply-chain-optimizer" class="link-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>Pandas</span>
+                <span>PuLP</span>
+                <span>Tableau</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Supply Chain Optimizer</h3>
+              <div class="project-badge">AI Solution</div>
+            </div>
+            <p class="project-description">Advanced optimization system that reduces logistics costs by 15-20% using linear programming and machine learning algorithms for route optimization.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-money-bill-wave"></i>
+                <span>18% cost reduction</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>1 months development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 - AI Voice Assistant -->
+        <div class="project-card" data-category="ai">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1500&q=80" alt="AI Voice Assistant">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="link-icon" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com/sunny18-max/sunny-assistant" class="link-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="project-tech">
+                <span>Python</span>
+                <span>NLP</span>
+                <span>SpeechRecognition</span>
+                <span>Automation</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Sunny - AI Voice Assistant</h3>
+              <div class="project-badge">Personal Project</div>
+            </div>
+            <p class="project-description">Intelligent voice-controlled assistant capable of performing complex tasks including system automation, media control, and natural language conversations.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-microphone"></i>
+                <span>95% accuracy</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>Ongoing development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Project 4 - Recipe Finder App -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%253D%253D&auto=format&fit=crop&w=1470&q=80" alt="Recipe Finder">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="link-icon" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="link-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>Spoonacular API</span>
+                <span>Redux</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Smart Recipe Finder</h3>
+              <div class="project-badge">Mobile App</div>
+            </div>
+            <p class="project-description">Mobile application that suggests recipes based on available ingredients, dietary restrictions, and cooking preferences with step-by-step guidance.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-users"></i>
+                <span>Helping others to create</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>10 days of development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 5 - Mental Wellness App -->
+        <div class="project-card" data-category="mobile">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Mental Wellness App">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://sunny18-max.github.io/mental-wellness/" class="link-icon" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="https://github.com/sunny18-max/mental-wellness" class="link-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="project-tech">
+                <span>JavaScript</span>
+                <span>PWA</span>
+                <span>LocalStorage</span>
+                <span>CSS3</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Mental Wellness Companion</h3>
+              <div class="project-badge">Health Tech</div>
+            </div>
+            <p class="project-description">Comprehensive mental wellness application featuring mood tracking, guided meditations, CBT exercises, and personalized recommendations.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-heart"></i>
+                <span>Helped 200+ users in Linkedin</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>20 days of development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Project 6 - Social Media Dashboard -->
+        <div class="project-card" data-category="web">
+          <div class="project-image">
+            <img src="https://images.unsplash.com/photo-1611162616475-46b635cb6868?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Social Media Dashboard">
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="#" class="link-icon" title="Live Demo">
+                  <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a href="#" class="link-icon" title="GitHub">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+              <div class="project-tech">
+                <span>React</span>
+                <span>Firebase</span>
+                <span>Social API</span>
+                <span>Chart.js</span>
+              </div>
+            </div>
+          </div>
+          <div class="project-content">
+            <div class="project-header">
+              <h3 class="project-title">Social Media Content Planner</h3>
+              <div class="project-badge">Marketing Tool</div>
+            </div>
+            <p class="project-description">Comprehensive platform for scheduling, analyzing, and optimizing social media content across multiple platforms with performance analytics.</p>
+            <div class="project-stats">
+              <div class="stat">
+                <i class="fas fa-rocket"></i>
+                <span>30% engagement boost</span>
+              </div>
+              <div class="stat">
+                <i class="fas fa-clock"></i>
+                <span>20 days of development</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- View All Projects Button -->
+      <div class="view-all-projects">
+        <a href="https://github.com/sunny18-max" class="btn btn-primary magnetic">
+          <span>Explore More Projects</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+<section class="contact" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Let's <span>Connect</span></h2>
+      <div class="section-subtitle">Have a project in mind or want to discuss opportunities?</div>
+    </div>
+    
+    <div class="row">
+      <div class="col-lg-5">
+        <div class="contact-info">
+          <h3>Collaboration starts with a conversation</h3>
+          <p>I'm currently available for freelance projects and full-time opportunities. Let's create something amazing together!</p>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <span>Email me at</span>
+              <a href="mailto:saathvik202@gmail.com">saathvik202@gmail.com</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-phone"></i>
+            </div>
+            <div class="contact-details">
+              <span>Call me at</span>
+              <a href="tel:+919908179816">+91 9908179816</a>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-details">
+              <span>Find me at</span>
+              <a href="https://maps.google.com/?q=Hyderabad,India" target="_blank">Hyderabad, India</a>
+            </div>
+          </div>
+          
+          <div class="social-links">
+            <h4>Follow Me</h4>
+            <div class="social-icons">
+              <a href="https://github.com/sunny18-max" class="social-icon magnetic" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/saathvik-kalepu-17041228b/" class="social-icon magnetic" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://x.com/home" class="social-icon magnetic" target="_blank">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="social-icon magnetic" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-icon magnetic" target="_blank">
+                <i class="fab fa-dribbble"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-7">
+              <!-- Form fields -->
+            <form class="contact-form" id="contactForm">
+              <input type="text" name="honeypot" style="display: none" tabindex="-1" autocomplete="off">
+              <div class="form-floating mb-3" style="position: relative;">
+                <input type="text" class="form-control" id="nameInput" name="user_name" placeholder="Your Name" required
+                  style="padding-left: 40px;">
+                <label for="nameInput" style="left: 40px;">Your Name</label>
+                <div class="form-icon"
+                  style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: #6c757d;">
+                  <i class="fas fa-user"></i>
+                </div>
+              </div>
+              <div class="form-floating mb-3" style="position: relative;">
+                <input type="email" class="form-control" id="emailInput" name="user_email" placeholder="Your Email" required
+                  style="padding-left: 40px;">
+                <label for="emailInput" style="left: 40px;">Your Email</label>
+                <div class="form-icon"
+                  style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: #6c757d;">
+                  <i class="fas fa-envelope"></i>
+                </div>
+              </div>
+              <div class="form-floating mb-3" style="position: relative;">
+                <input type="text" class="form-control" id="subjectInput" name="subject" placeholder="Subject"
+                  style="padding-left: 40px;">
+                <label for="subjectInput" style="left: 40px;">Subject</label>
+                <div class="form-icon"
+                  style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: #6c757d;">
+                  <i class="fas fa-tag"></i>
+                </div>
+              </div>
+              <div class="form-floating mb-3" style="position: relative;">
+                <textarea class="form-control" id="messageInput" name="message" placeholder="Your Message" style="height: 150px"
+                  required></textarea>
+                <label for="messageInput" style="left: 40px;">Your Message</label>
+                <div class="form-icon"
+                  style="position: absolute; top: 50%; left: 15px; transform: translateY(-50%); color: #6c757d;">
+                  <i class="fas fa-comment"></i>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary magnetic">
+                <span id="btnText">Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+              <div id="formStatus" class="mt-3"></div>
+            </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="#">
+            <span class="cursive-font">Portfolio</span>
+            <span class="name-highlight">Saathvik</span>
+          </a>
+        </div>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#experience">Journey</a>
+          <a href="#projects">Creations</a>
+          <a href="#contact">Connect</a>
+        </div>
+        <div class="footer-copy">
+          <p>&copy; 2025 Saathvik Kalepu.</p>
+          <p>Designed & Developed with <i class="fas fa-heart"></i> by Saathvik</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top magnetic">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+</body>
+</html>
