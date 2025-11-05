@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # 🌌 Saathvik's Digital Universe - Revolutionary Portfolio Experience
 
 An absolutely unique, never-seen-before portfolio that transforms your professional journey into an interactive universe! Navigate through space, explore planets, and interact with a hacker-style terminal. This isn't just a portfolio—it's an experience that will leave recruiters speechless.
@@ -162,4 +162,4 @@ To run this project locally:
 1. Clone the repository:
    ```bash
    git clone https://github.com/sunny18-max/portfolio.git
->>>>>>> 0a95b0d7501dffdf4e20a23e57c4088fea19e792
+
