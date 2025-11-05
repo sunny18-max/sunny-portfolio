@@ -1,0 +1,165 @@
+.terminal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.terminal-window {
+  width: 100%;
+  max-width: 900px;
+  height: 600px;
+  background: #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8), 0 0 100px rgba(0, 255, 0, 0.1);
+  border: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.terminal-header {
+  background: #2a2a2a;
+  padding: 0.8rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(0, 255, 0, 0.2);
+}
+
+.terminal-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.terminal-buttons span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-close {
+  background: #ff5f56;
+}
+
+.btn-close:hover {
+  background: #ff3b30;
+  box-shadow: 0 0 10px #ff5f56;
+}
+
+.btn-minimize {
+  background: #ffbd2e;
+}
+
+.btn-maximize {
+  background: #27c93f;
+}
+
+.terminal-title {
+  flex: 1;
+  text-align: center;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-body {
+  padding: 1.5rem;
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.terminal-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+  background: #00ff00;
+  border-radius: 4px;
+}
+
+.terminal-line {
+  margin-bottom: 0.5rem;
+}
+
+.terminal-line.system {
+  color: #00ff00;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+}
+
+.terminal-line.command {
+  color: #00ff00;
+}
+
+.terminal-line.output {
+  color: #ffffff;
+  padding-left: 1rem;
+}
+
+.terminal-line.error {
+  color: #ff5f56;
+}
+
+.terminal-input-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.terminal-prompt {
+  color: #00ff00;
+  font-weight: 700;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00ff00;
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  caret-color: #00ff00;
+}
+
+.terminal-input::selection {
+  background: rgba(0, 255, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .terminal-overlay {
+    padding: 1rem;
+  }
+
+  .terminal-window {
+    height: 500px;
+    max-width: 100%;
+  }
+
+  .terminal-body {
+    padding: 1rem;
+    font-size: 0.85rem;
+  }
+
+  .terminal-title {
+    font-size: 0.8rem;
+  }
+}

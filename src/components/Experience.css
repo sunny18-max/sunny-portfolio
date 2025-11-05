@@ -1,0 +1,223 @@
+.experience {
+  background: var(--dark);
+  padding: 120px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.experience::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 20% 50%, rgba(99, 102, 241, 0.1) 0%, transparent 50%),
+              radial-gradient(circle at 80% 80%, rgba(236, 72, 153, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background: var(--gradient);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  flex-direction: row;
+  text-align: right;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.timeline-icon {
+  position: relative;
+  z-index: 2;
+  width: 80px;
+  height: 80px;
+  background: var(--gradient);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  box-shadow: 0 0 0 10px var(--dark), 0 0 30px rgba(99, 102, 241, 0.5);
+  flex-shrink: 0;
+  animation: pulse-icon 2s ease-in-out infinite;
+}
+
+@keyframes pulse-icon {
+  0%, 100% {
+    box-shadow: 0 0 0 10px var(--dark), 0 0 30px rgba(99, 102, 241, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 0 10px var(--dark), 0 0 50px rgba(99, 102, 241, 0.8);
+  }
+}
+
+.timeline-card {
+  flex: 1;
+  background: rgba(99, 102, 241, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.timeline-card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background: rgba(99, 102, 241, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.timeline-item:nth-child(odd) .timeline-card::before {
+  right: -10px;
+}
+
+.timeline-item:nth-child(even) .timeline-card::before {
+  left: -10px;
+}
+
+.timeline-card:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: var(--primary);
+  transform: translateY(-5px);
+  box-shadow: 0 20px 60px rgba(99, 102, 241, 0.2);
+}
+
+.timeline-period {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--gradient);
+  color: white;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.timeline-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--light);
+}
+
+.company {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.description {
+  color: var(--gray);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.achievements {
+  list-style: none;
+  padding: 0;
+}
+
+.achievements li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+  margin-bottom: 0.8rem;
+  color: var(--gray);
+}
+
+.timeline-item:nth-child(odd) .achievements li {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.achievements li svg {
+  color: var(--primary);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+@media (max-width: 968px) {
+  .timeline::before {
+    left: 40px;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-content,
+  .timeline-item:nth-child(even) .timeline-content {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .timeline-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-card::before {
+    left: -10px;
+    right: auto;
+  }
+
+  .timeline-item:nth-child(odd) .achievements li {
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline::before {
+    left: 30px;
+  }
+
+  .timeline-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+
+  .timeline-card {
+    padding: 1.5rem;
+  }
+
+  .timeline-card h3 {
+    font-size: 1.4rem;
+  }
+}
