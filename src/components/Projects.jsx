@@ -63,8 +63,8 @@ const Projects = () => {
       description: 'Comprehensive mental wellness application featuring mood tracking, guided meditations, CBT exercises, and personalized recommendations.',
       image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80',
       tags: ['JavaScript', 'PWA', 'LocalStorage', 'CSS3'],
-      github: 'https://github.com/sunny18-max/mental-wellness',
-      demo: 'https://sunny18-max.github.io/mental-wellness/',
+      github: 'https://github.com/sunny18-max/serenity',
+      demo: 'https://sunny-portfolio-inky.vercel.app/',
       badge: 'Health Tech',
       stats: { metric: '200+ users', time: '20 days' }
     },
