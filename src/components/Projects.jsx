@@ -64,7 +64,7 @@ const Projects = () => {
       image: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80',
       tags: ['JavaScript', 'PWA', 'LocalStorage', 'CSS3'],
       github: 'https://github.com/sunny18-max/serenity',
-      demo: 'https://sunny-portfolio-inky.vercel.app/',
+      demo: 'https://serenity-plum-gamma.vercel.app/',
       badge: 'Health Tech',
       stats: { metric: '200+ users', time: '20 days' }
     },
